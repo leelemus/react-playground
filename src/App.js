@@ -8,6 +8,7 @@ import Bomb from './state-drills/Bomb';
 import RouletteGun from './state-drills/RouletteGun';
 import Tabs from './state/Tabs';
 import Accordion from './state-drills/Accordion';
+import DemonymApp from './demonymapp/demonymApp';
 
 const tabsProp = [
   { name: 'First tab',
@@ -55,6 +56,8 @@ class App extends Component {
         <Tabs tabs={tabsProp} />
         <hr/>
         <Accordion sections={sections}/>
+        <hr/>
+        <DemonymApp />
       </div>
     );
   }
